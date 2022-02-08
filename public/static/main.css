@@ -1,0 +1,492 @@
+body {
+    font-family: 'Poppins';
+    /* height:100%; */
+    padding: 0;
+    margin: 0;
+}
+
+#app{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+
+}
+.navbar-dark {
+  background: #ffffff;
+}
+
+.navbar-brand {
+  width: 110px;
+}
+@media only screen and (max-width: 600px) {
+  .navbar-brand {
+    width: 80px;
+  }
+}
+.nav-item {
+  font-weight: 500;
+  font-size: 16px;
+  padding: .0rem .4rem;
+  
+}
+.logo{
+    width: 100%;
+    height:100%;
+}
+.navbar-nav{
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .navbar-nav{
+        display: inline-block !important;
+    }
+    .nav-item{
+        display: inline-block !important;
+    }
+}
+.navbar .navbar-nav .nav-link {
+  transition: all .05s ease-in-out;
+  color: #000000;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  border-bottom: 2px solid #3b5998;
+  color: #000000;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  border-bottom: 2px solid #3b5998;
+  color: #000000;
+}
+
+.navbar-dark .navbar-toggler:hover {
+  cursor: pointer;
+  border-color: none !important;
+}
+.navbar-dark .navbar-toggler:active {
+  cursor: pointer;
+  border-color: none !important;
+}
+
+.navbar-dark .navbar-toggler {
+  color: #3b5998;
+    background-color: #fff;
+    border-color: none !important;
+}
+.toggler{
+  color: #3b5998;
+  font-size: 15px;
+  border: none !important;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: none !important;
+}
+#search-bar {
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
+  width: 50px;
+  height: 30px;
+  transition: all .2s;
+  border: none;
+  box-shadow: 0px 0px 0px !important;
+  max-width: 0 auto;
+
+}
+.mail-icon{
+  color: #3b5998;
+  font-size:20px !important;
+}
+#search-bar:hover {
+  background-color: #fff;
+  border: 2px solid#3b5998;
+  box-shadow: 0px 0px 0px !important;
+}
+
+#search-bar:focus {
+  background-color: white;
+  color: #212529;
+  width: 250px;
+  border: 2px solid#3b5998;
+  box-shadow: 0px 0px 0px !important;
+}
+@media only screen and (max-width: 600px) {
+  #search-bar:focus {
+    background-color: white;
+    color: #212529;
+    width: 100px;
+    border: 2px solid#3b5998;
+    box-shadow: 0px 0px 0px !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #search-bar:focus {
+    background-color: white;
+    color: #212529;
+    width: 100px;
+    border: 2px solid#3b5998;
+    box-shadow: 0px 0px 0px !important;
+  }
+}
+
+#search-bar::-webkit-input-placeholder {
+  color: #000 !important;
+}
+
+#search-bar:-moz-placeholder {
+  /* Firefox 18- */
+  color: #000 !important;
+}
+
+#search-bar::-moz-placeholder {
+  /* Firefox 19+ */
+  color:  #000 !important;
+}
+
+#search-bar:-ms-input-placeholder {
+  color: #000 !important;
+}
+.data_form_title{
+    margin-top: 20px;
+    color: #3b5998;
+    font-weight: 600;
+    margin: 0 auto;
+}
+.contain {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .contain input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 22px;
+    width: 23px;
+    background-color: #3b5998;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .contain:hover input ~ .checkmark {
+    background-color: #3b5998;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .contain input:checked ~ .checkmark {
+    background-color: #3b5998;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .contain input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .contain .checkmark:after {
+       top: 7px;
+      left: 7px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+  .form-extnd{
+    top: 8px;
+    position: absolute;
+  }
+  .data_form{
+      margin:0 auto;
+  }
+  .calories{
+    color: #3b5998;
+    font-weight: bold;
+    border: 2px solid#3b5998;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 4px;
+  }
+  .btn-calorie{
+    background-color: #3b5998 ;
+    color: #f6f6f6;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 0 auto;
+    border: 2px solid#3b5998;
+  }
+  .btn-calorie:hover{
+    color: #3b5998 ;
+    background-color: #f6f6f6;
+    border: 2px solid#3b5998;
+  }
+.nutrition{
+    min-height: calc(100vh - 70px);
+}
+  .footer{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #eaf1e3 ;
+    bottom:0;
+    width:100%;
+    margin-top: auto;
+    /* position: absolute; */
+
+
+  }
+  .footer-txt:hover{
+    color: #3b5998;
+  }
+  .footer-txt{
+    color: #3b5998;
+  }
+.recipe_card_img{
+  height: 200px;
+  width: 250px;
+  margin: 0 auto;
+}
+.recipe_img{
+  
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.recipe_card_graph{
+  height: 100px;
+  width: 170px;
+  margin: 0 auto;
+}
+.recipe_card_graph_mtr{
+  font-weight:bold;
+}
+.recipe_card_mtr{
+  font-weight: 500;
+}
+.btn-orange{
+  background-color: #3b5998 ;
+  color: #f6f6f6;
+  font-weight: 400;
+  margin: 0 auto;
+  line-height: 16px;
+  border: 2px solid#3b5998;
+  padding : .25rem .35rem;
+}
+.btn-orange:hover{
+  color: #3b5998 ;
+  background-color: #f6f6f6;
+  border: 2px solid#3b5998;
+}
+.recipe_card_pre{
+  height: 150px;
+  width: 250px;
+  margin: 0 auto;
+}
+.recipe_pre_content{
+  font-size: 20px;
+}
+.pre_head{
+  font-weight: 600;
+}
+.pre_card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn-orange-outline{
+  background-color: #ffffff;
+  color: #3b5998;
+  font-weight: 400;
+  margin: 0 0 0 10px;
+  line-height: 16px;
+  border: 2px solid#3b5998;
+  padding: .375rem .275rem;
+  border-radius: 4px;
+}
+.btn-orange-outline:hover{
+  color: #ffffff ;
+  background-color: #3b5998;
+  border: 2px solid#3b5998;
+}
+.btn-green-outline{
+  background-color: #ffffff;
+  color:#3b5998;
+  font-weight: 400;
+  line-height: 15px;
+  border: 2px solid #3b5998;
+  padding: .375rem .275rem;
+}
+.btn-green-outline:hover{
+  color: #ffffff ;
+  background-color:#3b5998;
+  border: 2px solid #3b5998;
+}
+.graph_mtr_big{
+  font-size: 70px;
+  font-weight: 600;
+}
+.nowrap{
+  white-space:pre-wrap; word-wrap:break-word
+}
+.nutrition_tbl.table td, .table th {
+  padding: 4px;
+  vertical-align: top;
+}
+.nutrition_tbl_left{
+  text-align:left !important;
+}
+.nutrition_tbl_left_dwn{
+  text-align:left !important;
+  width:25%;
+}
+@media only screen and (max-width: 600px) {
+  .nutrition_tbl{
+    display: block !important;
+    width: 100% !important;
+    overflow-y: auto !important;
+  }
+}
+.card-body {
+  padding: .75rem !important;
+}
+.b_cells{
+  font-size:larger;
+  font-weight: bold;
+}
+.txt-orange{
+  color:#e26d05;
+}
+.txt-green{
+  color: #3b5998;
+}
+.txt-yellow{
+  color:#ffc501;
+}
+.txt-blue{
+  color: #2b6fb5;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.pre-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/* / The container / */
+.container-bx {
+display: block;
+position: relative;
+padding-left: 35px;
+margin-bottom: 12px;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+/* / Hide the browser's default checkbox / */
+.container-bx input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+/* / Create a custom checkbox / */
+.checkmark-bx {
+position: absolute;
+top: 0;
+left: 0;
+height: 25px;
+width: 25px;
+background-color: #3b5998;
+}
+
+
+
+/* / Create the checkmark/indicator (hidden when not checked) / */
+.checkmark-bx:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* / Show the checkmark when checked / */
+.container-bx input:checked ~ .checkmark-bx:after {
+display: block;
+}
+
+/* / Style the checkmark/indicator / */
+.container-bx .checkmark-bx:after {
+left: 9px;
+top: 5px;
+width: 7px;
+height: 14px;
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+.w-35{
+  width:35%;
+}
+.w-30{
+  width: 30%;
+}
+.fs-20{
+  font-size: 20px;
+}
+
+
+.justify-content-space-around {
+  justify-content:space-around;
+}
+
+.footer-nav-icon{
+  margin-right : 5px
+}
+
+@media screen and (max-width: 992px) {
+  .footer-nav-text{
+    display: none;
+  }
+  .footer-nav-icon{
+    margin-right : 0px
+  }
+}
